@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="div_main">
+	<header> 
+    
+       <h1 align="center"> Razaq Medican Company </h1>
+   
+	</header>
+	<nav> 
+      
+      <ul>
+      	<li> <a href="" class="active"> Home </a> </li>
+      	<li> <a href=""> Category </a> </li>
+      	<li> <a href=""> Companies </a> </li>
+      </ul>
+ 
+	</nav>
+	<section>
+
+  <?php
+     mysql_connect('localhost' , 'root' , '') or die("Serwar not found");
+     mysql_select_db('medicine_db') or die("Serwar not found");
+     $products = mysql_query('SELECT * FROM product');
+
+
+    $product = mysql_fetch_array($products);
+	?>
+		<div id="d_img">
+		<h3><?php echo $product['pro_name'] ?></h3>
+          <img src="images/<?php echo $product['pro_img'] ?>" height="250px"; width="290px" ">
+          <center>
+          
+           </center>
+		</div>
+        <div id="d_detail">
+    <h2>Details</h2>
+    <h4><?php echo $product['pro_name'] ?></h4>
+    <h4><?php echo $product['pro_name'] ?></h4>
+    <h4><?php echo $product['pro_name'] ?></h4>
+    <h4><?php echo $product['pro_name'] ?></h4>
+    <a href="">Add to Cart</a>
+
+    </div>
+
+
+
+	</section>
+	<footer>
+		
+	</footer>
+
+
+
+</div>
+
+</body>
+</html>
