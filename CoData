@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Home </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header height: 400px;
+   background-image: url('images/med.jpg');
+   background-size: 1360px;>
+</header>
+  <nav> 
+      
+      <ul>
+        <li> <a href="" class="active"> Home </a> </li>
+        <li> <a href=""> Category </a> </li>
+        <li> <a href="company.html"> Companies </a> </li>
+      </ul>
+ 
+  </nav>
+<body>
+
+<div id="div_main">
+ 
+
+    <table border="solid">
+      
+      <tr>
+      <td><h2>Company Names <h2></td>
+
+
+    </tr>
+          <tr>
+      <td><h4> <href> Brookes </href><h4>
+
+      </td>
+
+
+    </tr>
+
+    </table>
+    
+    </div>
+
+
+
+	</section>
+	<footer>
+		
+	</footer>
+
+
+
+</div>
+
+</body>
+</html>
